@@ -1,124 +1,160 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, Briefcase } from "lucide-react";
 
+const rotatingWords = [
+  "Systems Thinking",
+  "Interaction Design",
+  "Prototyping",
+  "Visual Design",
+];
+
 const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
+  hidden: { opacity: 0, y: 24 },
+  visible: (delay: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.15, ease: "easeOut" as const },
+    transition: { duration: 0.55, delay, ease: "easeOut" as const },
   }),
 };
 
 export default function Hero() {
+  const [wordIndex, setWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((prev) => (prev + 1) % rotatingWords.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="home"
-      className="min-h-screen pt-28 pb-16 px-6 flex items-center"
+      className="min-h-screen pt-24 pb-8 px-6 flex items-center"
     >
-      <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-5 gap-10 items-center">
+      <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-5 gap-5 items-stretch">
         {/* Left Column */}
-        <div className="lg:col-span-3">
+        <div className="lg:col-span-3 flex">
           <motion.div
-            className="bg-card rounded-2xl p-8 md:p-12 border border-border"
+            className="bg-card rounded-2xl p-8 md:p-10 border border-border flex flex-col w-full"
             initial="hidden"
             animate="visible"
             variants={{
               hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
+              visible: { opacity: 1, transition: { staggerChildren: 0.12 } },
             }}
           >
             {/* Avatar */}
             <motion.div
               variants={fadeUp}
               custom={0}
-              className="w-24 h-24 rounded-full bg-gray-200 mb-8 overflow-hidden flex items-center justify-center"
+              className="w-20 h-20 rounded-full bg-gray-100 mb-6 overflow-hidden ring-4 ring-gray-100 shrink-0"
             >
-              <div className="w-full h-full bg-gradient-to-br from-accent-light to-accent rounded-full flex items-center justify-center text-white text-3xl font-bold">
-                YN
+              {/* Replace src with your photo in /public/avatar.jpg */}
+              <div className="w-full h-full bg-gradient-to-br from-accent-light to-accent flex items-center justify-center text-white text-2xl font-bold select-none">
+                KS
               </div>
             </motion.div>
 
-            {/* Heading */}
-            <motion.h1
-              variants={fadeUp}
-              custom={1}
-              className="text-4xl md:text-5xl lg:text-[3.4rem] font-bold leading-tight tracking-tight text-primary-dark"
-            >
-              I&apos;m <span className="text-accent">[Your Name]</span>, a
-              senior product designer specialized in{" "}
-              <span className="text-accent">systems thinking</span>
-            </motion.h1>
+            {/* Heading + rotating word */}
+            <motion.div variants={fadeUp} custom={0.1}>
+              <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight tracking-tight text-primary-dark">
+                I&apos;m{" "}
+                <span className="text-accent">Kulbir Singh</span>, a senior
+                product designer specialized in
+              </h1>
+
+              {/* Rotating word — slides up like a ticker */}
+              <div className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight tracking-tight overflow-hidden h-[1.25em] mt-0.5">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={wordIndex}
+                    initial={{ y: "100%", opacity: 0 }}
+                    animate={{ y: "0%", opacity: 1 }}
+                    exit={{ y: "-100%", opacity: 0 }}
+                    transition={{
+                      duration: 0.42,
+                      ease: "easeInOut" as const,
+                    }}
+                    className="block text-accent"
+                  >
+                    {rotatingWords[wordIndex]}
+                  </motion.span>
+                </AnimatePresence>
+              </div>
+            </motion.div>
 
             {/* Subtexts */}
-            <motion.div
-              variants={fadeUp}
-              custom={2}
-              className="mt-8 space-y-3"
-            >
-              <p className="text-text-secondary text-lg flex items-start gap-2">
-                <span className="text-xl">💼</span>
+            <motion.div variants={fadeUp} custom={0.25} className="mt-7 space-y-3">
+              <p className="text-text-secondary text-base flex items-start gap-2.5">
+                <span className="mt-0.5 shrink-0">💼</span>
                 <span>
                   Worked with{" "}
+                  <strong className="text-primary-dark">large enterprises</strong>{" "}
+                  like{" "}
                   <strong className="text-primary-dark">
-                    Y Combinator backed B2B startups
+                    Samsung Research America
                   </strong>{" "}
-                  like <strong className="text-primary-dark">Aspire</strong>.
+                  and <strong className="text-primary-dark">Infor</strong>.
                 </span>
               </p>
-              <p className="text-text-secondary text-lg flex items-start gap-2">
-                <span className="text-xl">🎨</span>
+              <p className="text-text-secondary text-base flex items-start gap-2.5">
+                <span className="mt-0.5 shrink-0">🎨</span>
                 <span>
-                  Currently obsessing over{" "}
-                  <strong className="text-primary-dark">design systems</strong>,{" "}
-                  <strong className="text-primary-dark">genAI</strong> &{" "}
-                  <strong className="text-primary-dark">AR/VR design</strong>.
+                  Currently working with{" "}
+                  <strong className="text-primary-dark">Design Systems</strong>,{" "}
+                  <strong className="text-primary-dark">
+                    Information Architecture
+                  </strong>
+                  , <strong className="text-primary-dark">Gen AI</strong> and
+                  solving real world problems.
                 </span>
               </p>
             </motion.div>
           </motion.div>
         </div>
 
-        {/* Right Column - Stats Cards */}
-        <div className="lg:col-span-2 flex flex-col gap-6">
+        {/* Right Column — Stats Cards */}
+        <div className="lg:col-span-2 flex flex-col gap-5">
           {/* Stat Card 1 */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
+            initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow duration-300"
+            transition={{ duration: 0.55, delay: 0.3 }}
+            className="bg-card rounded-2xl p-7 border border-border hover:shadow-md transition-shadow duration-300 flex-1 flex flex-col justify-center"
           >
-            <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mb-5">
-              <CheckCircle className="text-green-500" size={24} />
+            <div className="w-11 h-11 rounded-full bg-green-50 flex items-center justify-center mb-4">
+              <CheckCircle className="text-green-500" size={22} />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-primary-dark mb-2">
               10+ products shipped
             </h3>
-            <p className="text-text-secondary">
-              Across multiple{" "}
-              <strong className="text-accent">startups</strong> in the domain of{" "}
-              <strong className="text-accent">fintech</strong>,{" "}
-              <strong className="text-accent">agritech</strong> and{" "}
-              <strong className="text-accent">fleet management</strong>
+            <p className="text-text-secondary text-sm leading-relaxed">
+              Across <strong className="text-accent">high-growth startups</strong>{" "}
+              like <strong className="text-accent">Illumio</strong> and big tech
+              like{" "}
+              <strong className="text-accent">Samsung Research America</strong>{" "}
+              and <strong className="text-accent">Infor</strong>
             </p>
           </motion.div>
 
           {/* Stat Card 2 */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
+            initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow duration-300"
+            transition={{ duration: 0.55, delay: 0.45 }}
+            className="bg-card rounded-2xl p-7 border border-border hover:shadow-md transition-shadow duration-300 flex-1 flex flex-col justify-center"
           >
-            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-5">
-              <Briefcase className="text-blue-500" size={24} />
+            <div className="w-11 h-11 rounded-full bg-blue-50 flex items-center justify-center mb-4">
+              <Briefcase className="text-blue-500" size={22} />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-primary-dark mb-2">
               6+ years experience
             </h3>
-            <p className="text-text-secondary">
+            <p className="text-text-secondary text-sm leading-relaxed">
               In{" "}
               <strong className="text-accent">collaborating</strong> with
               cross-functional teams to{" "}

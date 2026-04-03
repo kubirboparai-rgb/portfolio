@@ -69,17 +69,17 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 relative flex items-center justify-between">
         {/* Logo */}
         <a
           href="#home"
-          className="text-xl font-bold text-primary-dark tracking-tight"
+          className="text-xl font-bold text-primary-dark tracking-tight z-10"
         >
-          KK
+          KS
         </a>
 
-        {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center gap-1 bg-white/60 backdrop-blur-sm rounded-full px-2 py-1 border border-border">
+        {/* Desktop Nav Links — absolutely centered */}
+        <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-1 bg-white/60 backdrop-blur-sm rounded-full px-2 py-1 border border-border">
           {navLinks.map((link) => (
             <a
               key={link.name}

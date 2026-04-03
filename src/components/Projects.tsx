@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Project {
   tag: string;
@@ -8,98 +9,140 @@ interface Project {
   title: string;
   categories: string[];
   bgColor: string;
-  textColor: string;
   tagBg: string;
-  tagText: string;
 }
 
 const projects: Project[] = [
   {
     tag: "INDUSTRY PROJECT – SHIPPED",
-    company: "Company A",
-    title: "Redesigning the funds page for Company A",
-    categories: ["FIN-TECH", "PRODUCT DESIGN", "DESKTOP", "MOBILE"],
-    bgColor: "from-blue-500 to-blue-600",
-    textColor: "text-white",
+    company: "Samsung Research America",
+    title: "Redesigning the design system for enterprise scale",
+    categories: ["ENTERPRISE", "DESIGN SYSTEMS", "DESKTOP"],
+    bgColor: "from-blue-500 to-blue-700",
     tagBg: "bg-white/20",
-    tagText: "text-white",
   },
   {
     tag: "INDUSTRY PROJECT – SHIPPED",
-    company: "Company A",
-    title: "Designing the pricing plans for Company A",
-    categories: ["FIN-TECH", "PRODUCT DESIGN", "DESKTOP", "MOBILE"],
-    bgColor: "from-orange-400 to-yellow-500",
-    textColor: "text-white",
+    company: "Infor",
+    title: "Designing the next-gen information architecture",
+    categories: ["ENTERPRISE", "IA", "DESKTOP", "MOBILE"],
+    bgColor: "from-orange-400 to-amber-500",
     tagBg: "bg-white/20",
-    tagText: "text-white",
   },
   {
     tag: "INDUSTRY PROJECT – SHIPPED",
-    company: "Company B",
-    title: "Improving support team's workflow by redesigning feedback flow",
-    categories: ["FLEET MGMT", "PRODUCT DESIGN", "DESKTOP"],
-    bgColor: "from-purple-500 to-purple-600",
-    textColor: "text-white",
+    company: "Illumio",
+    title: "Improving security workflow with better UX patterns",
+    categories: ["SECURITY", "PRODUCT DESIGN", "DESKTOP"],
+    bgColor: "from-purple-500 to-violet-600",
     tagBg: "bg-white/20",
-    tagText: "text-white",
   },
   {
     tag: "INDUSTRY PROJECT – SHIPPED",
-    company: "Company B",
-    title: "Improving the product's UX by designing meaningful empty states",
-    categories: ["FLEET MGMT", "UX DESIGN", "MOBILE"],
-    bgColor: "from-teal-400 to-cyan-500",
-    textColor: "text-white",
+    company: "Illumio",
+    title: "Designing meaningful empty states to improve product UX",
+    categories: ["PRODUCT DESIGN", "UX DESIGN", "MOBILE"],
+    bgColor: "from-teal-400 to-cyan-600",
     tagBg: "bg-white/20",
-    tagText: "text-white",
   },
 ];
 
 export default function Projects() {
+  const [cursor, setCursor] = useState({ x: 0, y: 0, visible: false });
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    setCursor((prev) => ({ ...prev, x: e.clientX, y: e.clientY }));
+  }, []);
+
+  const handleMouseEnterCard = useCallback(() => {
+    setCursor((prev) => ({ ...prev, visible: true }));
+  }, []);
+
+  const handleMouseLeaveCard = useCallback(() => {
+    setCursor((prev) => ({ ...prev, visible: false }));
+  }, []);
+
   return (
-    <section id="projects" className="py-20 px-6">
+    <section
+      id="projects"
+      className="py-20 px-6"
+      onMouseMove={handleMouseMove}
+    >
+      {/* Custom floating cursor */}
+      <AnimatePresence>
+        {cursor.visible && (
+          <motion.div
+            className="fixed z-50 pointer-events-none"
+            style={{ left: cursor.x, top: cursor.y }}
+            initial={{ opacity: 0, scale: 0.6 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.6 }}
+            transition={{ duration: 0.2, ease: "easeOut" as const }}
+          >
+            <div
+              className="-translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-primary-dark flex flex-col items-center justify-center shadow-xl"
+              style={{ transform: "translate(-50%, -50%)" }}
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth={2.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="mb-0.5"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+              <span className="text-white text-[10px] font-semibold tracking-wider uppercase leading-none">
+                View
+              </span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold text-primary-dark text-center mb-14"
+          className="text-3xl md:text-4xl font-bold text-primary-dark text-center mb-12"
         >
           Featured Projects
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-5">
           {projects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className={`group relative rounded-2xl overflow-hidden bg-gradient-to-br ${project.bgColor} cursor-pointer`}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+              whileHover={{ y: -6, transition: { duration: 0.25 } }}
+              onMouseEnter={handleMouseEnterCard}
+              onMouseLeave={handleMouseLeaveCard}
+              className={`group relative rounded-2xl overflow-hidden bg-gradient-to-br ${project.bgColor} cursor-none`}
             >
-              <div className="p-8 pb-48 md:pb-56">
-                {/* Tag */}
-                <span
-                  className={`inline-block px-3 py-1 ${project.tagBg} ${project.tagText} text-xs font-semibold tracking-wider rounded-full mb-4 border border-white/30`}
-                >
-                  {project.tag}
-                </span>
-
-                {/* Company */}
-                <p
-                  className={`${project.textColor} text-sm font-medium opacity-80 mb-2 text-right`}
-                >
-                  {project.company}
-                </p>
+              <div className="p-7 pb-52">
+                {/* Top row: tag + company */}
+                <div className="flex items-start justify-between gap-2 mb-4">
+                  <span
+                    className={`inline-block px-3 py-1 ${project.tagBg} text-white text-[10px] font-bold tracking-widest rounded-full border border-white/30 uppercase`}
+                  >
+                    {project.tag}
+                  </span>
+                  <span className="text-white/70 text-xs font-semibold shrink-0">
+                    {project.company}
+                  </span>
+                </div>
 
                 {/* Title */}
-                <h3
-                  className={`text-2xl md:text-3xl font-bold ${project.textColor} leading-tight mb-4`}
-                >
+                <h3 className="text-2xl md:text-[1.65rem] font-bold text-white leading-snug mb-5">
                   {project.title}
                 </h3>
 
@@ -108,7 +151,7 @@ export default function Projects() {
                   {project.categories.map((cat) => (
                     <span
                       key={cat}
-                      className={`px-3 py-1 ${project.tagBg} ${project.tagText} text-xs font-semibold tracking-wider rounded-full border border-white/20`}
+                      className={`px-3 py-1 ${project.tagBg} text-white text-[10px] font-bold tracking-widest rounded-full border border-white/20 uppercase`}
                     >
                       {cat}
                     </span>
@@ -116,10 +159,10 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Placeholder for project screenshot */}
-              <div className="absolute bottom-0 left-8 right-8">
-                <div className="bg-white/10 backdrop-blur-sm rounded-t-xl h-40 md:h-48 border border-white/20 border-b-0 flex items-center justify-center">
-                  <span className="text-white/40 text-sm font-medium">
+              {/* Screenshot placeholder */}
+              <div className="absolute bottom-0 left-7 right-7">
+                <div className="bg-white/10 backdrop-blur-sm rounded-t-xl h-44 border border-white/20 border-b-0 flex items-center justify-center">
+                  <span className="text-white/30 text-xs font-medium tracking-wide uppercase">
                     Project Screenshot
                   </span>
                 </div>
