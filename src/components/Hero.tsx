@@ -33,7 +33,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen pt-24 pb-8 px-6 flex items-center"
+      className="pt-20 pb-8 px-6"
     >
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-5 gap-5 items-stretch">
         {/* Left Column */}
