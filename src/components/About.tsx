@@ -4,52 +4,48 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6">
-      <div className="max-w-4xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold text-primary-dark text-center mb-14"
-        >
-          About Me
-        </motion.h2>
-
+    <section id="about" className="py-8 px-6">
+      <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-card rounded-2xl p-8 md:p-12 border border-border"
+          transition={{ duration: 0.6 }}
+          className="bg-card rounded-2xl p-8 md:p-10 border border-border"
         >
-          <div className="space-y-6 text-text-secondary text-lg leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-dark text-center mb-10">
+            About Me
+          </h2>
+
+          <div className="max-w-4xl mx-auto text-text-secondary text-lg leading-relaxed">
             <p>
-              I&apos;m a senior product designer with{" "}
-              <strong className="text-primary-dark">6+ years of experience</strong>{" "}
-              crafting user-centered digital products. My approach combines systems
-              thinking with deep user empathy to create interfaces that are both
-              beautiful and functional.
-            </p>
-            <p>
-              I&apos;ve worked with{" "}
+              Product Designer with{" "}
               <strong className="text-primary-dark">
-                Y Combinator backed startups
+                5+ years of experience
               </strong>{" "}
-              across fintech, agritech, and fleet management, shipping 10+
-              products that serve thousands of users daily.
-            </p>
-            <p>
-              When I&apos;m not designing, you&apos;ll find me exploring the
-              latest in{" "}
-              <strong className="text-primary-dark">design systems</strong>,{" "}
-              <strong className="text-primary-dark">generative AI</strong>, and{" "}
-              <strong className="text-primary-dark">AR/VR design</strong>.
+              driving end-to-end design across enterprise and consumer
+              products. Currently shaping{" "}
+              <strong className="text-primary-dark">
+                security analytics experiences at Illumio
+              </strong>
+              , and previously leading UX for{" "}
+              <strong className="text-primary-dark">
+                B2B cloud services at Samsung
+              </strong>
+              . Skilled in{" "}
+              <strong className="text-primary-dark">
+                mixed-methods research
+              </strong>
+              ,{" "}
+              <strong className="text-primary-dark">system thinking</strong>,
+              and{" "}
+              <strong className="text-primary-dark">interaction design</strong>{" "}
+              across desktop, mobile, and web platforms.
             </p>
           </div>
 
           {/* Skills */}
-          <div className="mt-10 pt-8 border-t border-border">
+          <div className="max-w-4xl mx-auto mt-8 pt-8 border-t border-border">
             <h3 className="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-4">
               Core Skills
             </h3>
