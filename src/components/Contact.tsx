@@ -45,26 +45,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-8 px-6">
       <div className="max-w-7xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold text-primary-dark text-center mb-4"
-        >
-          Let&apos;s Connect
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-text-secondary text-center text-lg mb-14"
-        >
-          Feel free to reach out for collaborations or just a friendly hello
-        </motion.p>
-
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-5">
           {contactLinks.map((link, index) => (
             <motion.a
               key={index}
