@@ -25,37 +25,26 @@ function LinkedinIcon({ size = 28 }: { size?: number }) {
 const contactLinks = [
   {
     icon: <LinkedinIcon size={28} />,
-    label: "@yourlinkedin",
-    href: "#",
+    label: "linkedin.com/in/kulbir-singh2334",
+    href: "https://www.linkedin.com/in/kulbir-singh2334/",
     color: "hover:bg-blue-50 hover:border-blue-200",
     iconColor: "text-primary-dark",
+    external: true,
   },
   {
     icon: <Mail size={28} />,
-    label: "your@email.com",
-    href: "mailto:your@email.com",
+    label: "Kulboparai97@gmail.com",
+    href: "mailto:Kulboparai97@gmail.com",
     color: "hover:bg-green-50 hover:border-green-200",
     iconColor: "text-green-600",
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7">
-        <path d="M22 7h-7V2H9v5H2v15h20V7zM9 22H4V12h5v10zm6 0h-4V12h4v10zm5 0h-4V12h4v10zM9 7V4h6v3H9z" />
-      </svg>
-    ),
-    label: "@yourbehance",
-    href: "#",
-    color: "hover:bg-blue-600 hover:border-blue-600 group",
-    iconColor: "text-blue-600 group-hover:text-white",
-    labelHoverColor: "group-hover:text-white",
-    bgHover: true,
+    external: false,
   },
 ];
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-6">
-      <div className="max-w-5xl mx-auto">
+    <section id="contact" className="py-8 px-6">
+      <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -75,11 +64,13 @@ export default function Contact() {
           Feel free to reach out for collaborations or just a friendly hello
         </motion.p>
 
-        <div className="grid sm:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {contactLinks.map((link, index) => (
             <motion.a
               key={index}
               href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -88,9 +79,7 @@ export default function Contact() {
               className={`bg-card rounded-2xl p-8 border border-border flex flex-col items-start justify-between min-h-[200px] transition-all duration-300 ${link.color}`}
             >
               <span className={link.iconColor}>{link.icon}</span>
-              <span
-                className={`text-primary-dark font-medium text-lg mt-auto ${link.labelHoverColor || ""}`}
-              >
+              <span className="text-primary-dark font-medium text-lg mt-auto">
                 {link.label}
               </span>
             </motion.a>

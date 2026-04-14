@@ -65,7 +65,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 px-6"
+      className="py-8 px-6"
       onMouseMove={handleMouseMove}
     >
       {/* Custom floating cursor */}
