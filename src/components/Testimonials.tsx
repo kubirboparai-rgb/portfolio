@@ -13,24 +13,24 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Steve Dunn",
-    title: "Director of Product Management, Netradyne",
+    name: "Sylvia Leung",
+    title: "Senior Staff UX & Visual Designer | UX Manager at Samsung Research America",
     quote:
-      'I worked with [Name] for a couple of years on many projects at [Company]. They can <highlight>take messy product ideas and turn them into interfaces that make sense</highlight>. They\'re not shy about asking the right questions to understand the problem so a proper solution can be designed. This saves the PM and dev teams time and effort during the planning and development of a feature. <highlight>[Name] thinks ahead. They spot potential problems for users and always bring solutions to the table</highlight>. If you need a UX designer who actually solved problems and not just makes things look pretty, give them a shout.',
+      "I've had the pleasure of working with Kulbir at Samsung Research America. He is highly independent, able to take ownership of projects and drive them to completion with minimal oversight. <highlight>He's great at seeking and incorporating feedback then iterating on designs until the end result is the best possible one</highlight>. He's also always eager to take on new challenges and continuously learn, which makes him a valuable asset to any team. His proactive approach, combined with his openness to growth, sets him apart as a UX designer. <highlight>I highly recommend him to anyone looking for a dedicated and adaptable professional</highlight>.",
     highlights: [],
   },
   {
-    name: "Jane Smith",
-    title: "Engineering Lead, TechCorp",
+    name: "Pete Yang, MBA, M.Eng",
+    title: "Product Manager @ Samsung",
     quote:
-      "Working with [Name] was a game changer for our product team. <highlight>Their ability to translate complex requirements into intuitive designs</highlight> is unmatched. They consistently delivered work that exceeded expectations and helped us ship features faster. <highlight>A true systems thinker who understands both user needs and technical constraints</highlight>.",
+      "I had the pleasure of working with Kulbir and was always impressed by his strong UX design expertise. <highlight>He has a great ability to bring thoughtful, functional design solutions, especially in a B2B context, where usability and efficiency are key</highlight>. Beyond his skills, Kulbir is a kind and collaborative team player. He's always open to feedback and works well with others to create the best possible outcomes. <highlight>Any team would benefit from his expertise and positive approach to problem-solving</highlight>.",
     highlights: [],
   },
   {
-    name: "Alex Chen",
-    title: "CEO, StartupXYZ",
+    name: "Deepali Vinay",
+    title: "Lead Product Designer at Atlassian",
     quote:
-      "[Name] joined us when we were still figuring out our product direction. <highlight>They helped us define our design language from scratch and built a system that scaled</highlight> as we grew. Their attention to detail and user empathy made a huge difference in our product quality. <highlight>They don't just design screens—they solve problems</highlight>.",
+      "<highlight>What stands out about Kulbir is his strong sense of ownership over the products he designs</highlight>. He is a dependable team player who actively seeks feedback, embraces iteration, and continuously improves his work. <highlight>He communicates his design decisions with clarity, enabling alignment among stakeholders and helping projects move forward smoothly</highlight>. I am confident he will continue to grow and achieve great things in his design career.",
     highlights: [],
   },
 ];
