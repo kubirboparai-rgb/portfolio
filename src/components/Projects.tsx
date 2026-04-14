@@ -80,24 +80,17 @@ export default function Projects() {
             transition={{ duration: 0.2, ease: "easeOut" as const }}
           >
             <div
-              className="-translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-primary-dark flex flex-col items-center justify-center shadow-xl"
+              className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#5B8DEF] border-2 border-white shadow-xl"
               style={{ transform: "translate(-50%, -50%)" }}
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth={2.5}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="mb-0.5"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7" />
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" fill="white" stroke="#1a202c" strokeWidth="1.5"/>
+                <circle cx="12" cy="12" r="5" fill="#8B4513"/>
+                <circle cx="12" cy="12" r="2.5" fill="#1a202c"/>
+                <circle cx="13" cy="11" r="0.8" fill="white"/>
               </svg>
-              <span className="text-white text-[10px] font-semibold tracking-wider uppercase leading-none">
-                View
+              <span className="text-white text-sm font-bold whitespace-nowrap">
+                View Project
               </span>
             </div>
           </motion.div>

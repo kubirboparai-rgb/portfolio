@@ -40,6 +40,15 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
+      // If near bottom of page, force-activate last section (Contact)
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 100
+      ) {
+        setActiveSection(navLinks[navLinks.length - 1].name);
+        return;
+      }
+
       const sections = navLinks.map((link) => ({
         name: link.name,
         el: document.querySelector(link.href),
