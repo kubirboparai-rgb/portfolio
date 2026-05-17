@@ -53,10 +53,12 @@ export default function Hero() {
               custom={0}
               className="w-20 h-20 rounded-full bg-gray-100 mb-6 overflow-hidden ring-4 ring-gray-100 shrink-0"
             >
-              {/* Replace src with your photo in /public/avatar.jpg */}
-              <div className="w-full h-full bg-gradient-to-br from-accent-light to-accent flex items-center justify-center text-white text-2xl font-bold select-none">
-                KS
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/portfolio/images/kulbir-avatar.png"
+                alt="Kulbir Singh"
+                className="w-full h-full object-cover"
+              />
             </motion.div>
 
             {/* Heading + rotating word */}

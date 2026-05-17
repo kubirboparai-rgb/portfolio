@@ -82,7 +82,7 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#home"
-          className="text-xl font-bold text-primary-dark tracking-tight z-10"
+          className="z-10 flex items-center justify-center w-9 h-9 rounded-full bg-primary-dark text-white text-sm font-bold"
         >
           KS
         </a>
@@ -95,14 +95,14 @@ export default function Navbar() {
               href={link.href}
               className={`relative px-4 py-2 text-sm font-medium rounded-full transition-colors duration-200 ${
                 activeSection === link.name
-                  ? "text-primary-dark"
+                  ? "text-white"
                   : "text-text-secondary hover:text-primary-dark"
               }`}
             >
               {activeSection === link.name && (
                 <motion.span
                   layoutId="activeNav"
-                  className="absolute inset-0 bg-white rounded-full shadow-sm"
+                  className="absolute inset-0 bg-primary-dark rounded-full shadow-sm"
                   transition={{ type: "spring", stiffness: 380, damping: 30 }}
                 />
               )}
