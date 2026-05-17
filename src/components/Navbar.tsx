@@ -114,13 +114,17 @@ export default function Navbar() {
         {/* Right side */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="#"
+            href="/portfolio/Kulbir_Singh_Resume.docx"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-2.5 bg-primary-dark text-white text-sm font-medium rounded-full hover:bg-accent transition-colors duration-200"
           >
             Resume
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/kulbir-singh2334/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="p-2.5 border border-border rounded-lg hover:bg-white transition-colors duration-200"
             aria-label="LinkedIn"
           >
@@ -164,13 +168,17 @@ export default function Navbar() {
               ))}
               <div className="flex gap-3 pt-2">
                 <a
-                  href="#"
+                  href="/portfolio/Kulbir_Singh_Resume.docx"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 text-center px-5 py-2.5 bg-primary-dark text-white text-sm font-medium rounded-full"
                 >
                   Resume
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/kulbir-singh2334/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2.5 border border-border rounded-lg"
                   aria-label="LinkedIn"
                 >

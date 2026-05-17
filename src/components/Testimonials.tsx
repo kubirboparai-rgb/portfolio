@@ -15,21 +15,21 @@ const testimonials: Testimonial[] = [
   {
     name: "Sylvia Leung",
     title: "Senior Staff UX & Visual Designer | UX Manager at Samsung Research America",
-    image: "/portfolio/images/sylvia.jpg",
+    image: "/portfolio/images/Sylvia.png",
     quote:
       "I've had the pleasure of working with Kulbir at Samsung Research America. He is highly independent, able to take ownership of projects and drive them to completion with minimal oversight. <highlight>He's great at seeking and incorporating feedback then iterating on designs until the end result is the best possible one</highlight>. He's also always eager to take on new challenges and continuously learn, which makes him a valuable asset to any team. His proactive approach, combined with his openness to growth, sets him apart as a UX designer. <highlight>I highly recommend him to anyone looking for a dedicated and adaptable professional</highlight>.",
   },
   {
     name: "Pete Yang, MBA, M.Eng",
     title: "Product Manager @ Samsung",
-    image: "/portfolio/images/pete.jpg",
+    image: "/portfolio/images/Pete.png",
     quote:
       "I had the pleasure of working with Kulbir and was always impressed by his strong UX design expertise. <highlight>He has a great ability to bring thoughtful, functional design solutions, especially in a B2B context, where usability and efficiency are key</highlight>. Beyond his skills, Kulbir is a kind and collaborative team player. He's always open to feedback and works well with others to create the best possible outcomes. <highlight>Any team would benefit from his expertise and positive approach to problem-solving</highlight>.",
   },
   {
     name: "Deepali Vinay",
     title: "Lead Product Designer at Atlassian",
-    image: "/portfolio/images/deepali.jpg",
+    image: "/portfolio/images/Deepali.png",
     quote:
       "<highlight>What stands out about Kulbir is his strong sense of ownership over the products he designs</highlight>. He is a dependable team player who actively seeks feedback, embraces iteration, and continuously improves his work. <highlight>He communicates his design decisions with clarity, enabling alignment among stakeholders and helping projects move forward smoothly</highlight>. I am confident he will continue to grow and achieve great things in his design career.",
   },
