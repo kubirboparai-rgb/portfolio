@@ -10,16 +10,18 @@ interface Project {
   categories: string[];
   bgColor: string;
   tagBg: string;
+  href?: string;
 }
 
 const projects: Project[] = [
   {
     tag: "INDUSTRY PROJECT – SHIPPED",
     company: "Samsung Research America",
-    title: "Redesigning the design system for enterprise scale",
-    categories: ["ENTERPRISE", "DESIGN SYSTEMS", "DESKTOP"],
+    title: "Samsung Knox Configure- Creating easy to use cloud managing portal",
+    categories: ["ENTERPRISE", "CLOUD", "DESKTOP"],
     bgColor: "from-blue-500 to-blue-700",
     tagBg: "bg-white/20",
+    href: "/portfolio/projects/knox-configure",
   },
   {
     tag: "INDUSTRY PROJECT – SHIPPED",
@@ -110,8 +112,9 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 gap-5">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
               key={index}
+              href={project.href || "#"}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
@@ -119,7 +122,7 @@ export default function Projects() {
               whileHover={{ y: -6, transition: { duration: 0.25 } }}
               onMouseEnter={handleMouseEnterCard}
               onMouseLeave={handleMouseLeaveCard}
-              className={`group relative rounded-2xl overflow-hidden bg-gradient-to-br ${project.bgColor} cursor-none`}
+              className={`group relative rounded-2xl overflow-hidden bg-gradient-to-br ${project.bgColor} cursor-none block`}
             >
               <div className="p-7 pb-52">
                 {/* Top row: tag + company */}
@@ -163,7 +166,7 @@ export default function Projects() {
 
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 rounded-2xl" />
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
