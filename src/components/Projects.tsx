@@ -25,6 +25,15 @@ const projects: Project[] = [
   },
   {
     tag: "INDUSTRY PROJECT – SHIPPED",
+    company: "Samsung Research America",
+    title: "Samsung Smart Accessories — Empowering users to personalize their devices in seconds",
+    categories: ["B2C", "MOBILE", "NFC", "PERSONALIZATION"],
+    bgColor: "from-violet-500 to-indigo-700",
+    tagBg: "bg-white/20",
+    href: "/portfolio/projects/smart-accessories",
+  },
+  {
+    tag: "INDUSTRY PROJECT – SHIPPED",
     company: "Infor",
     title: "Designing the next-gen information architecture",
     categories: ["ENTERPRISE", "IA", "DESKTOP", "MOBILE"],

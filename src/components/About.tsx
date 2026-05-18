@@ -69,6 +69,16 @@ export default function About() {
               ))}
             </div>
           </div>
+
+          {/* Learn More */}
+          <div className="max-w-4xl mx-auto mt-8 text-center">
+            <a
+              href="/portfolio/about"
+              className="inline-block px-6 py-3 bg-primary-dark text-white font-medium rounded-full hover:bg-accent transition-colors duration-200"
+            >
+              Learn more about me
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
