@@ -13,6 +13,13 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
+    name: "Radhika Rayadu",
+    title: "Sr. Director at Illumio",
+    image: "/portfolio/images/Radhika.png",
+    quote:
+      "I had the pleasure of managing Kulbir and was consistently impressed by his initiative, ownership, and ability to deliver results in complex problem spaces. <highlight>He brings a can-do attitude to every challenge and approaches his work with a strong sense of urgency</highlight>. Whether facing tight deadlines or navigating ambiguity, he remains focused on driving progress and delivering meaningful outcomes. He played an important role in tackling some complex cybersecurity design challenges, <highlight>helping translate sophisticated technical concepts into intuitive and effective user experiences</highlight>. His ability to work through complexity while keeping users and business goals in mind made him a valuable contributor to the team. Beyond his individual contributions, he is a dependable teammate who collaborates effectively across functions and is always willing to step up where needed. I would gladly work with him again and highly recommend him.",
+  },
+  {
     name: "Sylvia Leung",
     title: "Senior Staff UX & Visual Designer | UX Manager at Samsung Research America",
     image: "/portfolio/images/Sylvia.png",
