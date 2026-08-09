@@ -296,7 +296,7 @@ export default function KnoxConfigureCaseStudy() {
                   <h3 className="text-xl font-bold text-primary-dark mb-4">
                     Putting the User in the Driver&apos;s Seat
                   </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
+                  <p className="text-text-secondary text-lg leading-relaxed">
                     Through in-depth user research, we uncovered key needs and
                     pain points, enabling us to put the user in the
                     driver&apos;s seat. Our research methods included{" "}
@@ -306,10 +306,6 @@ export default function KnoxConfigureCaseStudy() {
                     </strong>
                     .
                   </p>
-                  <ImagePlaceholder
-                    name="research-overview.png"
-                    className="w-full h-[280px]"
-                  />
                 </div>
 
                 {/* Methods */}
@@ -517,15 +513,23 @@ export default function KnoxConfigureCaseStudy() {
                     critical to simplifying the complex workflows used in
                     configuring devices.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-5">
-                    <ImagePlaceholder
-                      name="persona-it-admin.png"
-                      className="h-[220px]"
-                    />
-                    <ImagePlaceholder
-                      name="persona-b2c-user.png"
-                      className="h-[220px]"
-                    />
+                  <div className="flex flex-col gap-5">
+                    <div className="rounded-xl overflow-hidden border border-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/B2b%20Persona.png"
+                        alt="B2B IT Admin Persona"
+                        className="w-full h-auto"
+                      />
+                    </div>
+                    <div className="rounded-xl overflow-hidden border border-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/B2C%20Persona.png"
+                        alt="B2C User Persona"
+                        className="w-full h-auto"
+                      />
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -557,20 +561,32 @@ export default function KnoxConfigureCaseStudy() {
                     they had to rely on customer service for assistance. Multiple
                     iterations were explored through wireframes and prototypes.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-5 mb-6">
-                    <ImagePlaceholder
-                      name="iteration-wireframe-v1.png"
-                      className="h-[240px]"
-                    />
-                    <ImagePlaceholder
-                      name="iteration-wireframe-v2.png"
-                      className="h-[240px]"
-                    />
+                  <div className="flex flex-col gap-5">
+                    <div className="rounded-xl overflow-hidden border border-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/Iterations%201.png"
+                        alt="Iteration 1"
+                        className="w-full h-auto"
+                      />
+                    </div>
+                    <div className="rounded-xl overflow-hidden border border-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/Iterations%202.png"
+                        alt="Iteration 2"
+                        className="w-full h-auto"
+                      />
+                    </div>
+                    <div className="rounded-xl overflow-hidden border border-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/Iterations%203.png"
+                        alt="Iteration 3"
+                        className="w-full h-auto"
+                      />
+                    </div>
                   </div>
-                  <ImagePlaceholder
-                    name="iteration-wireframe-v3.png"
-                    className="w-full h-[280px]"
-                  />
                 </div>
 
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
