@@ -21,26 +21,30 @@ export default function About() {
             <p>
               Product Designer with{" "}
               <strong className="text-primary-dark">
-                5+ years of experience
+                6+ years of experience
               </strong>{" "}
-              driving end-to-end design across enterprise and consumer
-              products. Currently shaping{" "}
+              driving end-to-end UX across enterprise and consumer platforms —
+              blending roles at tech giants like{" "}
+              <strong className="text-primary-dark">Samsung</strong> with
+              fast-moving startup environments. Currently shaping{" "}
               <strong className="text-primary-dark">
-                security analytics experiences at Illumio
+                AI-driven security analytics, policy-management, and AI security
+                experiences at Illumio
               </strong>
-              , and previously leading UX for{" "}
+              , while driving AI-powered design workflows that boosted team
+              productivity by 140%; previously led UX for{" "}
               <strong className="text-primary-dark">
-                B2B cloud services at Samsung
+                B2B and B2B2C cloud services at Samsung
               </strong>
               . Skilled in{" "}
               <strong className="text-primary-dark">
                 mixed-methods research
               </strong>
               ,{" "}
-              <strong className="text-primary-dark">system thinking</strong>,
+              <strong className="text-primary-dark">systems thinking</strong>,
               and{" "}
               <strong className="text-primary-dark">interaction design</strong>{" "}
-              across desktop, mobile, and web platforms.
+              across desktop, mobile, and web.
             </p>
           </div>
 

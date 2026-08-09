@@ -90,7 +90,7 @@ export default function AboutPage() {
               <strong className="text-primary-dark">
                 Samsung Research America
               </strong>
-              . 5+ years of making complex things simple across enterprise and
+              . 6+ years of making complex things simple across enterprise and
               consumer products.
             </p>
           </motion.div>

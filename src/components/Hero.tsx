@@ -56,7 +56,7 @@ export default function Hero() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/portfolio/images/kulbir-avatar.png"
-                alt="Kulbir Singh"
+                alt="Kulbir (Kevin) Singh"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -65,7 +65,7 @@ export default function Hero() {
             <motion.div variants={fadeUp} custom={0.1}>
               <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight tracking-tight text-primary-dark">
                 I&apos;m{" "}
-                <span className="text-accent">Kulbir Singh</span>, a senior
+                <span className="text-accent">Kulbir (Kevin) Singh</span>, a senior
                 product designer specialized in
               </h1>
 

@@ -82,9 +82,14 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#home"
-          className="z-10 flex items-center justify-center w-9 h-9 rounded-full bg-primary-dark text-white text-sm font-bold"
+          className="z-10 flex items-center justify-center w-9 h-9 rounded-full overflow-hidden"
         >
-          KS
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/portfolio/images/Initial_logo.png"
+            alt="Kulbir Singh logo"
+            className="w-full h-full object-cover"
+          />
         </a>
 
         {/* Desktop Nav Links — absolutely centered */}
