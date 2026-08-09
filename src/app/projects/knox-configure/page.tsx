@@ -114,10 +114,14 @@ export default function KnoxConfigureCaseStudy() {
 
       {/* Hero Image */}
       <div className="max-w-7xl mx-auto px-6 -mt-8">
-        <ImagePlaceholder
-          name="knox-configure-hero.png"
-          className="w-full h-[300px] md:h-[450px] shadow-xl"
-        />
+        <div className="w-full h-[300px] md:h-[450px] shadow-xl rounded-2xl overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/portfolio/images/Knox%20Configure%20Images/Cover.webp"
+            alt="Knox Configure cover"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
 
       {/* Content with Sidebar */}
@@ -232,35 +236,45 @@ export default function KnoxConfigureCaseStudy() {
 
                 {/* Challenge / Goal */}
                 <div className="grid md:grid-cols-2 gap-5">
-                  <div className="bg-card rounded-2xl p-7 border border-border">
-                    <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center mb-4">
-                      <span className="text-red-500 text-lg font-bold">!</span>
+                  <div className="bg-card rounded-2xl overflow-hidden border border-border">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/portfolio/images/Knox%20Configure%20Images/Problem%20image%201.webp"
+                      alt="The Challenge"
+                      className="w-full h-[200px] object-cover"
+                    />
+                    <div className="p-7">
+                      <h3 className="text-lg font-bold text-primary-dark mb-2">
+                        The Challenge
+                      </h3>
+                      <p className="text-text-secondary text-sm leading-relaxed">
+                        Research indicated that the current enrollment flow is too
+                        long, asks too many questions, or has excessive steps. The
+                        Knox Configure module relied on an outdated process where
+                        users had to depend on customer service for assistance
+                        rather than having direct access to features and settings.
+                      </p>
                     </div>
-                    <h3 className="text-lg font-bold text-primary-dark mb-2">
-                      The Challenge
-                    </h3>
-                    <p className="text-text-secondary text-sm leading-relaxed">
-                      Research indicated that the current enrollment flow is too
-                      long, asks too many questions, or has excessive steps. The
-                      Knox Configure module relied on an outdated process where
-                      users had to depend on customer service for assistance
-                      rather than having direct access to features and settings.
-                    </p>
                   </div>
-                  <div className="bg-card rounded-2xl p-7 border border-border">
-                    <div className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center mb-4">
-                      <span className="text-green-500 text-lg">&#10003;</span>
+                  <div className="bg-card rounded-2xl overflow-hidden border border-border">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/portfolio/images/Knox%20Configure%20Images/Problem%20Image%202.webp"
+                      alt="The Goal"
+                      className="w-full h-[200px] object-cover"
+                    />
+                    <div className="p-7">
+                      <h3 className="text-lg font-bold text-primary-dark mb-2">
+                        The Goal
+                      </h3>
+                      <p className="text-text-secondary text-sm leading-relaxed">
+                        The large majority of enterprises would consider using Knox
+                        Configure for B2B2C purposes if the flow provides
+                        simplicity, transparency, and efficiency to maintain user
+                        engagement and satisfaction. We aimed to deliver a
+                        one-click, effortless experience.
+                      </p>
                     </div>
-                    <h3 className="text-lg font-bold text-primary-dark mb-2">
-                      The Goal
-                    </h3>
-                    <p className="text-text-secondary text-sm leading-relaxed">
-                      The large majority of enterprises would consider using Knox
-                      Configure for B2B2C purposes if the flow provides
-                      simplicity, transparency, and efficiency to maintain user
-                      engagement and satisfaction. We aimed to deliver a
-                      one-click, effortless experience.
-                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -317,14 +331,42 @@ export default function KnoxConfigureCaseStudy() {
                     .
                   </p>
                   <div className="grid md:grid-cols-2 gap-5">
-                    <ImagePlaceholder
-                      name="research-methods-heuristic.png"
-                      className="h-[220px]"
-                    />
-                    <ImagePlaceholder
-                      name="research-methods-gap-analysis.png"
-                      className="h-[220px]"
-                    />
+                    <div className="bg-bg rounded-xl overflow-hidden border border-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/Heuristic.png"
+                        alt="Heuristic Evaluation"
+                        className="w-full h-[300px] object-cover object-top"
+                      />
+                      <div className="p-5">
+                        <h4 className="font-semibold text-primary-dark mb-1">
+                          Heuristic Evaluation
+                        </h4>
+                        <p className="text-text-secondary text-sm leading-relaxed">
+                          Evaluated the existing interface against usability
+                          heuristics to identify pain points, inconsistencies,
+                          and areas for improvement across the portal.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="bg-bg rounded-xl overflow-hidden border border-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/Affinity.png"
+                        alt="Gap Analysis"
+                        className="w-full h-[300px] object-cover object-top"
+                      />
+                      <div className="p-5">
+                        <h4 className="font-semibold text-primary-dark mb-1">
+                          Gap Analysis
+                        </h4>
+                        <p className="text-text-secondary text-sm leading-relaxed">
+                          Conducted user interviews, data analysis, and
+                          cross-team critiques to map the gap between the
+                          current state and real user needs.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -406,10 +448,34 @@ export default function KnoxConfigureCaseStudy() {
                     logical pathways for both IT admin and first-time user
                     personas.
                   </p>
-                  <ImagePlaceholder
-                    name="ia-restructure.png"
-                    className="w-full h-[320px]"
-                  />
+                  <div className="grid md:grid-cols-2 gap-5">
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-3">
+                        Before
+                      </p>
+                      <div className="rounded-xl overflow-hidden border border-border">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src="/portfolio/images/Knox%20Configure%20Images/%5BBefore%5D%20-%20Research%20user%20flow%20.webp"
+                          alt="Before - Research user flow"
+                          className="w-full h-[280px] object-cover object-top"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-3">
+                        After
+                      </p>
+                      <div className="rounded-xl overflow-hidden border border-border">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src="/portfolio/images/Knox%20Configure%20Images/New%20User%20flow%20architecture.webp"
+                          alt="After - New user flow architecture"
+                          className="w-full h-[280px] object-cover object-top"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
@@ -426,10 +492,14 @@ export default function KnoxConfigureCaseStudy() {
                     flow was too long and asked too many questions, so we mapped
                     out a streamlined path that reduced unnecessary steps.
                   </p>
-                  <ImagePlaceholder
-                    name="enrollment-flow-mapping.png"
-                    className="w-full h-[280px]"
-                  />
+                  <div className="rounded-xl overflow-hidden border border-border">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/portfolio/images/Knox%20Configure%20Images/User%20Flow%20%20Before%20and%20After.webp"
+                      alt="User flow before and after"
+                      className="w-full h-auto"
+                    />
+                  </div>
                 </div>
 
                 <div className="bg-card rounded-2xl p-8 border border-border">
