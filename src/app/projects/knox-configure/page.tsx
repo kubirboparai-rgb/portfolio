@@ -185,6 +185,139 @@ export default function KnoxConfigureCaseStudy() {
                   Overview
                 </h2>
 
+                {/* Problem & Insights */}
+                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold tracking-widest rounded-full uppercase mb-5">
+                    Problem &amp; Insights
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold text-primary-dark mb-4 leading-snug">
+                    Admins struggled to locate features while creating or managing profiles — leading to frustration, endless scrolling, and reliance on customer support
+                  </h3>
+                  <p className="text-text-secondary text-base leading-relaxed mb-8">
+                    Knox Configure enabled IT admins to create and manage device profiles through a cloud portal to customize and automate Samsung devices. Yet despite its capabilities, many admins found the experience deeply frustrating.{" "}
+                    <strong className="text-primary-dark">Creating and managing profiles should be seamless</strong> — but fragmented navigation, an overloaded feature set, and a complete lack of guided progression left users without the direction they needed. What should have been an empowering tool felt like an obstacle.
+                  </p>
+                  {/* Two-column image placeholders */}
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <ImagePlaceholder
+                      name="problem-old-ui.png"
+                      className="h-[220px]"
+                    />
+                    <ImagePlaceholder
+                      name="problem-user-frustration.png"
+                      className="h-[220px]"
+                    />
+                  </div>
+                  {/* Captions */}
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <p className="text-text-secondary text-xs leading-relaxed text-center px-2">
+                      Non-linear navigation, feature overload, and no guided process — leaving users to fend for themselves
+                    </p>
+                    <p className="text-text-secondary text-xs leading-relaxed text-center px-2">
+                      Getting lost mid-flow impacts experience — leading to abandonment, loss of trust, and negative sentiment
+                    </p>
+                  </div>
+                </div>
+
+                {/* Goals */}
+                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold tracking-widest rounded-full uppercase mb-5">
+                    Goals
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold text-primary-dark mb-4 leading-snug">
+                    Refocusing Knox Configure: from overwhelming feature sprawl to a clear, guided profile creation experience
+                  </h3>
+                  <p className="text-text-secondary text-base leading-relaxed">
+                    Leadership&apos;s push to evolve Knox Configure from a{" "}
+                    <strong className="text-primary-dark">B2B into a B2B2C service</strong>{" "}
+                    created both an opportunity and a design constraint. Users needed a clear path to their most valuable features — particularly branding capabilities that let businesses customize and sell smart accessories. Recognizing an overextended feature set and fragmented user journeys, I organized a{" "}
+                    <strong className="text-primary-dark">four-phase strategy</strong>: enhance profile creation efficiency, enable swift feature detection, introduce progress awareness, and offer a preview of the redefined platform — all while lifting both user experience and team morale.
+                  </p>
+                </div>
+
+                {/* Solution */}
+                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold tracking-widest rounded-full uppercase mb-5">
+                    Solution
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold text-primary-dark mb-4 leading-snug">
+                    A five-step profile creation process — intuitive to navigate, with a redefined feature hierarchy that makes setup feel effortless
+                  </h3>
+                  <p className="text-text-secondary text-base leading-relaxed">
+                    As lead designer, I pivoted Knox Configure from a cumbersome, feature-heavy workflow into a{" "}
+                    <strong className="text-primary-dark">dynamic, user-centric interface</strong>. The solution centered on giving users breathing room — clear progress awareness, logical feature categorization, and effortless navigation between steps. By shifting from feature overload to structured progression, the redesign enabled both IT admins and first-time B2C users to create and manage profiles seamlessly,{" "}
+                    <strong className="text-primary-dark">without ever needing to contact customer support</strong>.
+                  </p>
+                </div>
+
+                {/* Before & After */}
+                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <h3 className="text-xl font-bold text-primary-dark mb-6">
+                    Before &amp; After
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    {/* Before */}
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-3">
+                        Before
+                      </p>
+                      <ImagePlaceholder
+                        name="before-knox-configure.png"
+                        className="h-[280px] mb-5"
+                      />
+                      <div className="space-y-2">
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-red-500 mb-3">
+                          Pain Points
+                        </p>
+                        {[
+                          "Non-linear navigation with no clear starting point",
+                          "Hundreds of feature categories with no hierarchy or grouping",
+                          "No progress indicators — users couldn't tell how far along they were",
+                          "Impossible to distinguish configured vs. non-configured states at a glance",
+                          "Required customer service for tasks users should self-serve",
+                          "No real-time device preview to validate changes before applying",
+                          "Steep learning curve for both IT admins and first-time B2C users",
+                        ].map((point) => (
+                          <div key={point} className="flex items-start gap-2">
+                            <span className="text-red-400 text-sm shrink-0 mt-0.5">✗</span>
+                            <p className="text-text-secondary text-sm leading-relaxed">{point}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* After */}
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-3">
+                        After
+                      </p>
+                      <ImagePlaceholder
+                        name="after-knox-configure.png"
+                        className="h-[280px] mb-5"
+                      />
+                      <div className="space-y-2">
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-green-600 mb-3">
+                          Improvements
+                        </p>
+                        {[
+                          "Five-step guided profile creation — reduced from 17 steps",
+                          "F-shaped feature hierarchy enabling fast, scannable feature discovery",
+                          "Transparent progress indicators throughout the entire flow",
+                          "Clear configured vs. non-configured visual states — reduced support tickets",
+                          "Self-service experience eliminating reliance on customer support",
+                          "Real-time device preview lets users validate changes before applying",
+                          "Designed to serve both IT admins and first-time B2C users equally",
+                        ].map((point) => (
+                          <div key={point} className="flex items-start gap-2">
+                            <span className="text-green-500 text-sm shrink-0 mt-0.5">✓</span>
+                            <p className="text-text-secondary text-sm leading-relaxed">{point}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Overview context */}
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
                   <p className="text-text-secondary text-lg leading-relaxed mb-6">
                     The goal was to{" "}
