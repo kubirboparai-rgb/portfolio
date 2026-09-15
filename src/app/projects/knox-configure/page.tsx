@@ -1027,6 +1027,40 @@ export default function KnoxConfigureCaseStudy() {
                   </div>
                 </div>
 
+                {/* Phase 4 — Real-time preview */}
+                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <p className="text-sm font-bold text-blue-600 mb-2">
+                    Strategic phase 4 of 4
+                  </p>
+                  <h3 className="text-xl md:text-2xl font-bold text-primary-dark mb-4 leading-snug">
+                    A real-time preview letting users see their customizations on the actual Samsung device
+                  </h3>
+                  <p className="text-text-secondary text-base leading-relaxed mb-4">
+                    One of the sharpest pain points from our initial research was that{" "}
+                    <strong className="text-primary-dark">users configured devices without ever seeing the result</strong>. They picked wallpapers, themes, and welcome screens entirely blind — as one participant put it, like drawing with your eyes closed. The only way to verify the work was to push a profile to a physical test device and hope it looked right.
+                  </p>
+                  <p className="text-text-secondary text-base leading-relaxed mb-10">
+                    I scoped the preview deliberately: it surfaces{" "}
+                    <strong className="text-primary-dark">only for features with a visual outcome</strong>, so it stays genuinely useful instead of becoming decoration next to settings it cannot represent. Preview panels also render per device type — phone and tablet side by side — because the same configuration lands differently on each.
+                  </p>
+
+                  {/* Preview */}
+                  <div className="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                      <h4 className="text-lg font-bold text-primary-dark mb-3">
+                        Preview
+                      </h4>
+                      <p className="text-text-secondary text-base leading-relaxed">
+                        Configuration on the left, live result on the right. Users see exactly what the enrollment welcome screen will look like as they type — closing the feedback loop that research flagged as the single biggest source of uncertainty.
+                      </p>
+                    </div>
+                    <ImagePlaceholder
+                      name="design-phase4-realtime-preview.png"
+                      className="w-full h-[440px]"
+                    />
+                  </div>
+                </div>
+
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
                   <h3 className="text-xl font-bold text-primary-dark mb-4">
                     The Redesigned Knox Configure Portal
