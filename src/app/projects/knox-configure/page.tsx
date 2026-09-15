@@ -802,25 +802,6 @@ export default function KnoxConfigureCaseStudy() {
                   </div>
                 </div>
 
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
-                    Building the B2C Enrollment Flow
-                  </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    To deliver a great experience for B2C users, we built a{" "}
-                    <strong className="text-primary-dark">
-                      streamlined enrollment flow on top of our existing B2B
-                      process
-                    </strong>
-                    , aiming for a one-click, effortless experience where users
-                    could watch the process happen without extra steps.
-                  </p>
-                  <ImagePlaceholder
-                    name="iteration-enrollment-flow.png"
-                    className="w-full h-[300px]"
-                  />
-                </div>
-
               </motion.div>
             </section>
 
@@ -835,6 +816,72 @@ export default function KnoxConfigureCaseStudy() {
                 <h2 className="text-3xl font-bold text-primary-dark mb-6">
                   Design
                 </h2>
+
+                {/* Profile creation efficiency */}
+                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <h3 className="text-xl md:text-2xl font-bold text-primary-dark mb-4 leading-snug">
+                    Enhancing profile creation efficiency to lift team morale, reduce information overload, and cut technical complexity
+                  </h3>
+                  <p className="text-text-secondary text-base leading-relaxed mb-10">
+                    I initiated an exercise to refine the Knox Configure profile creation process, spotlighting the steps that genuinely anchored the user experience. Working alongside{" "}
+                    <strong className="text-primary-dark">PM, UX research, and engineering</strong>, we evaluated every step against task completion time, user engagement, flow complexity, and technical cost — leading to a strategic{" "}
+                    <strong className="text-primary-dark">72% reduction in steps</strong>. That exercise became the blueprint for reshaping the information architecture into a streamlined, effortless navigation model, while{" "}
+                    <strong className="text-primary-dark">cutting engineering effort by 15%</strong>.
+                  </p>
+
+                  <div className="border-t border-border pt-8">
+                    <h4 className="text-lg font-bold text-primary-dark mb-1">
+                      Transitioning from cluttered, complex steps to a streamlined one
+                    </h4>
+                    <p className="text-text-secondary text-sm mb-10">
+                      Informed by post-meeting feedback and research synthesis
+                    </p>
+
+                    {/* Before */}
+                    <div className="mb-12">
+                      <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">
+                        Before
+                      </p>
+                      <p className="text-text-secondary text-base leading-relaxed mb-6">
+                        No straightforward path for users to set up their profiles — configuration settings sprawled across a single dense screen, leaving users to hunt for what mattered.
+                      </p>
+                      <ImagePlaceholder
+                        name="design-before-profile-creation.png"
+                        className="w-full h-[520px]"
+                      />
+                    </div>
+
+                    {/* After */}
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">
+                        After
+                      </p>
+                      <p className="text-text-secondary text-base leading-relaxed mb-6">
+                        Partnering with our UX researcher, we combined sales interviews with Google Analytics data to understand which steps users actually relied on and how they moved through the structure. That grounding let me rebuild the information architecture around a clear, progressive path — and translate it into a guided, five-step creation flow.
+                      </p>
+                      <div className="flex flex-col gap-6">
+                        <div>
+                          <ImagePlaceholder
+                            name="design-after-information-architecture.png"
+                            className="w-full h-[480px]"
+                          />
+                          <p className="text-text-secondary text-xs leading-relaxed mt-3">
+                            New information architecture — required settings, optional settings, and navigation tabs mapped across five clear stages
+                          </p>
+                        </div>
+                        <div>
+                          <ImagePlaceholder
+                            name="design-after-profile-creation.png"
+                            className="w-full h-[560px]"
+                          />
+                          <p className="text-text-secondary text-xs leading-relaxed mt-3">
+                            The redesigned profile creation flow — one focused decision per step, with visible progress throughout
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
                   <h3 className="text-xl font-bold text-primary-dark mb-4">
