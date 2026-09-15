@@ -706,33 +706,37 @@ export default function KnoxConfigureCaseStudy() {
                     </div>
                     <div className="p-6 bg-card">
                       <h4 className="font-bold text-primary-dark mb-3">
-                        Converging on the Final Direction
+                        Pushing the Interactions Further
                       </h4>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        The third iteration brought together all feedback loops —
-                        One UI alignment, a real-time device preview, a
-                        streamlined 5-step profile creation, and clear configured
-                        vs. non-configured states. This version served as the
-                        validated foundation that shipped to production.
+                        The third iteration incorporated One UI alignment and an
+                        early version of the real-time device preview. While the
+                        direction was getting stronger, feedback from cross-team
+                        critiques made clear that the design still hadn't hit the
+                        bar — more rounds of refinement were needed before it
+                        could be considered final.
                       </p>
-                      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-                        <p className="text-[11px] font-bold uppercase tracking-widest text-green-600 mb-2">
-                          Outcome
+                      <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-amber-600 mb-2">
+                          Feedback received
                         </p>
                         <ul className="text-text-secondary text-sm leading-relaxed space-y-1.5">
                           <li className="flex items-start gap-2">
-                            <span className="mt-0.5 text-green-500 shrink-0">✓</span>
-                            <span><strong className="text-primary-dark">PM & Stakeholders</strong> aligned on shipping — the flow met the goal of one-click, effortless enrollment.</span>
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">PM:</strong> Device preview needed to feel more live and reactive — static representation wasn't convincing enough for the B2C pitch.</span>
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="mt-0.5 text-green-500 shrink-0">✓</span>
-                            <span><strong className="text-primary-dark">Design team</strong> signed off on One UI consistency and the new component patterns established for future Knox modules.</span>
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">Design team:</strong> Component patterns were inconsistent across profile creation and enrollment — needed a unified system before handoff.</span>
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="mt-0.5 text-green-500 shrink-0">✓</span>
-                            <span>Further iterations continued post-launch based on live user data, driving the satisfaction score from 60 → 95.</span>
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">Senior stakeholders:</strong> Wanted to see more iterations exploring edge cases — multi-accessory profiles and error states were still unresolved.</span>
                           </li>
                         </ul>
+                        <p className="text-text-secondary text-xs mt-3 italic">
+                          The process continued through additional rounds of critique and refinement before arriving at the final design.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -757,23 +761,6 @@ export default function KnoxConfigureCaseStudy() {
                   />
                 </div>
 
-                <div className="bg-card rounded-2xl p-8 border border-border">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
-                    Cross-Team Critiques & Feedback
-                  </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    Throughout the iteration process, we conducted{" "}
-                    <strong className="text-primary-dark">
-                      cross-team critiques with researchers and product managers
-                    </strong>{" "}
-                    to validate design decisions and ensure alignment between
-                    user needs, business goals, and technical feasibility.
-                  </p>
-                  <ImagePlaceholder
-                    name="iteration-feedback-sessions.png"
-                    className="w-full h-[260px]"
-                  />
-                </div>
               </motion.div>
             </section>
 
@@ -994,6 +981,33 @@ export default function KnoxConfigureCaseStudy() {
                 </div>
               </motion.div>
             </section>
+
+            {/* ===================== CROSS-TEAM CRITIQUES ===================== */}
+            <div className="mb-16">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="bg-card rounded-2xl p-8 border border-border">
+                  <h3 className="text-xl font-bold text-primary-dark mb-4">
+                    Cross-Team Critiques & Feedback
+                  </h3>
+                  <p className="text-text-secondary text-lg leading-relaxed">
+                    Throughout every iteration, we ran{" "}
+                    <strong className="text-primary-dark">
+                      cross-team critiques with researchers, product managers,
+                      and senior stakeholders
+                    </strong>{" "}
+                    to pressure-test design decisions and ensure alignment
+                    between user needs, business goals, and technical
+                    feasibility. This ongoing feedback loop — not any single
+                    iteration — is what ultimately shaped the final design.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
 
             {/* Back */}
             <div className="border-t border-border pt-10">
