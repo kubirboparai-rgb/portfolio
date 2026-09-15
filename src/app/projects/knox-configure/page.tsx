@@ -209,12 +209,20 @@ export default function KnoxConfigureCaseStudy() {
                     />
                   </div>
                   {/* Captions */}
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-2 gap-4 mb-8">
                     <p className="text-text-secondary text-xs leading-relaxed text-center px-2">
                       Non-linear navigation, feature overload, and no guided process — leaving users to fend for themselves
                     </p>
                     <p className="text-text-secondary text-xs leading-relaxed text-center px-2">
                       Getting lost mid-flow impacts experience — leading to abandonment, loss of trust, and negative sentiment
+                    </p>
+                  </div>
+                  {/* Role summary */}
+                  <div className="border-t border-border pt-6">
+                    <p className="text-text-secondary text-sm leading-relaxed">
+                      As the{" "}
+                      <strong className="text-primary-dark">lead UX designer for Knox Configure, Knox Service Plugin, and Knox Asset Intelligence</strong>,
+                      I drove end-to-end design across Samsung&apos;s B2B cloud services. My work required deep understanding of two opposing mental models — seasoned IT admins and first-time B2C users — to untangle complex workflows and make them feel intuitive for both.
                     </p>
                   </div>
                 </div>
@@ -252,19 +260,16 @@ export default function KnoxConfigureCaseStudy() {
 
                 {/* Before & After */}
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
-                  <h3 className="text-xl font-bold text-primary-dark mb-6">
+                  <h3 className="text-xl font-bold text-primary-dark mb-8">
                     Before &amp; After
                   </h3>
-                  <div className="grid md:grid-cols-2 gap-6 mb-8">
-                    {/* Before */}
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-3">
-                        Before
-                      </p>
-                      <ImagePlaceholder
-                        name="before-knox-configure.png"
-                        className="h-[280px] mb-5"
-                      />
+
+                  {/* Before row */}
+                  <div className="mb-8 pb-8 border-b border-border">
+                    <p className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-5">
+                      Before
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-6 items-start">
                       <div className="space-y-2">
                         <p className="text-[11px] font-bold uppercase tracking-widest text-red-500 mb-3">
                           Pain Points
@@ -284,16 +289,19 @@ export default function KnoxConfigureCaseStudy() {
                           </div>
                         ))}
                       </div>
-                    </div>
-                    {/* After */}
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-3">
-                        After
-                      </p>
                       <ImagePlaceholder
-                        name="after-knox-configure.png"
-                        className="h-[280px] mb-5"
+                        name="before-knox-configure.png"
+                        className="h-[320px]"
                       />
+                    </div>
+                  </div>
+
+                  {/* After row */}
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-5">
+                      After
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-6 items-start">
                       <div className="space-y-2">
                         <p className="text-[11px] font-bold uppercase tracking-widest text-green-600 mb-3">
                           Improvements
@@ -313,58 +321,12 @@ export default function KnoxConfigureCaseStudy() {
                           </div>
                         ))}
                       </div>
+                      <ImagePlaceholder
+                        name="after-knox-configure.png"
+                        className="h-[320px]"
+                      />
                     </div>
                   </div>
-                </div>
-
-                {/* Overview context */}
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    The goal was to{" "}
-                    <strong className="text-primary-dark">
-                      expand Samsung smart accessories into the B2C space
-                    </strong>{" "}
-                    by building on Knox Configure — a B2B cloud solution that
-                    allows enterprises to customize Samsung devices. We wanted to
-                    create a new way for users to customize their devices with
-                    smart accessories, creating a more intuitive and meaningful
-                    connection with their phones and the brand they love.
-                  </p>
-                  <p className="text-text-secondary text-lg leading-relaxed">
-                    To achieve this, we took a{" "}
-                    <strong className="text-primary-dark">
-                      holistic approach
-                    </strong>{" "}
-                    that included redesigning the Knox Configure module (within
-                    settings) to better serve both B2B and B2C audiences,
-                    restructuring the Knox Configure information architecture,
-                    streamlining enrollment flows, and enhancing the interface
-                    for a more intuitive and user-friendly experience.
-                  </p>
-                </div>
-
-                {/* My Role */}
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
-                    My Role
-                  </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed">
-                    As the{" "}
-                    <strong className="text-primary-dark">
-                      lead designer for Samsung Knox Configure, Knox Service
-                      Plugin, and Knox Asset Intelligence
-                    </strong>
-                    , I drove innovation in B2B cloud services at scale. I played
-                    a pivotal strategic role, driving initiatives that increased{" "}
-                    <strong className="text-primary-dark">
-                      customer satisfaction score from 60 to 95
-                    </strong>
-                    . Building a product to be used by seasoned IT admins and end
-                    users using the product for the first time was one of the
-                    biggest challenges — requiring significant effort to
-                    understand the mental models of these personas to simplify
-                    all the complex workflows used in configuring devices.
-                  </p>
                 </div>
 
                 {/* Challenge / Goal */}
