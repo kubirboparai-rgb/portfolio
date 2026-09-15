@@ -973,6 +973,60 @@ export default function KnoxConfigureCaseStudy() {
                   </div>
                 </div>
 
+                {/* Phase 3 — Progress indicators */}
+                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <p className="text-sm font-bold text-blue-600 mb-2">
+                    Strategic phase 3 of 4
+                  </p>
+                  <h3 className="text-xl md:text-2xl font-bold text-primary-dark mb-4 leading-snug">
+                    Giving users a progress indicator to increase completion rate and decrease task completion time
+                  </h3>
+                  <p className="text-text-secondary text-base leading-relaxed mb-10">
+                    Users needed{" "}
+                    <strong className="text-primary-dark">transparency about where they stood in the process</strong>{" "}
+                    to stay on the guided path rather than guessing how much was left. I spearheaded a brainstorming session focused on making that progress legible at every step — strengthening both usability and the underlying site structure.
+                  </p>
+
+                  {/* Dynamic progress bar */}
+                  <div className="grid md:grid-cols-2 gap-6 items-start mb-10">
+                    <div>
+                      <h4 className="text-lg font-bold text-primary-dark mb-3">
+                        Dynamic progress bar
+                      </h4>
+                      <p className="text-text-secondary text-base leading-relaxed">
+                        Steps enable and disable as required fields are completed, so users always see how far along they are and what remains.
+                      </p>
+                    </div>
+                    <ImagePlaceholder
+                      name="design-phase3-progress-bar.png"
+                      className="w-full h-[400px]"
+                    />
+                  </div>
+
+                  {/* Dynamic buttons */}
+                  <div className="grid md:grid-cols-2 gap-6 items-start mb-10">
+                    <div>
+                      <h4 className="text-lg font-bold text-primary-dark mb-3">
+                        Dynamic buttons
+                      </h4>
+                      <p className="text-text-secondary text-base leading-relaxed">
+                        The primary action stays disabled until every required field is satisfied — removing dead ends and making the next step unmistakable.
+                      </p>
+                    </div>
+                    <ImagePlaceholder
+                      name="design-phase3-dynamic-buttons.png"
+                      className="w-full h-[400px]"
+                    />
+                  </div>
+
+                  <div className="border-t border-border pt-6">
+                    <p className="text-text-secondary text-base leading-relaxed">
+                      The result was a redesigned navigation with an engaging visual style, built for engineering efficiency on top of a cohesive design system. Through rigorous user testing and the shift to a transparent flow, we landed a coherent aesthetic across the platform and an optimized site architecture that{" "}
+                      <strong className="text-primary-dark">prioritizes user actions and streamlines the journey through continuous feedback</strong>.
+                    </p>
+                  </div>
+                </div>
+
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
                   <h3 className="text-xl font-bold text-primary-dark mb-4">
                     The Redesigned Knox Configure Portal
