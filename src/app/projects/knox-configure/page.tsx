@@ -817,8 +817,11 @@ export default function KnoxConfigureCaseStudy() {
                   Design
                 </h2>
 
-                {/* Profile creation efficiency */}
+                {/* Phase 1 — Profile creation efficiency */}
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <p className="text-sm font-bold text-blue-600 mb-2">
+                    Strategic phase 1 of 4
+                  </p>
                   <h3 className="text-xl md:text-2xl font-bold text-primary-dark mb-4 leading-snug">
                     Enhancing profile creation efficiency to lift team morale, reduce information overload, and cut technical complexity
                   </h3>
@@ -879,6 +882,93 @@ export default function KnoxConfigureCaseStudy() {
                           </p>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Phase 2 — Swift feature detection */}
+                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                  <p className="text-sm font-bold text-blue-600 mb-2">
+                    Strategic phase 2 of 4
+                  </p>
+                  <h3 className="text-xl md:text-2xl font-bold text-primary-dark mb-6 leading-snug">
+                    Providing swift feature detection to improve usability, drive user value, and increase satisfaction
+                  </h3>
+
+                  {/* F-shape pattern — image left, text right */}
+                  <div className="grid md:grid-cols-5 gap-6 items-start mb-10">
+                    <div className="md:col-span-2">
+                      <ImagePlaceholder
+                        name="design-f-shape-pattern.png"
+                        className="w-full h-[400px]"
+                      />
+                    </div>
+                    <div className="md:col-span-3">
+                      <p className="text-text-secondary text-base leading-relaxed">
+                        I applied the{" "}
+                        <strong className="text-primary-dark">F-shape reading pattern</strong>{" "}
+                        against Google Analytics data to identify which features carried the highest and lowest usage. In a workshop with product managers, we ran{" "}
+                        <strong className="text-primary-dark">card sorting</strong>{" "}
+                        to rearrange the feature set — balancing what PMs wanted surfaced for business reasons against what users actually reached for most. PMs pushed for a dedicated category of high-use features tied to business goals; I proposed layering{" "}
+                        <strong className="text-primary-dark">categories and sub-categories</strong>{" "}
+                        so features could be discovered effortlessly rather than hunted for.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="border-t border-border pt-8">
+                    <h4 className="text-lg font-bold text-primary-dark mb-1">
+                      Reconstructing feature categories based on data
+                    </h4>
+                    <p className="text-text-secondary text-sm mb-10">
+                      From endless scrolling to effortless feature configuration
+                    </p>
+
+                    {/* Before */}
+                    <div className="mb-12">
+                      <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">
+                        Before
+                      </p>
+                      <p className="text-text-secondary text-base leading-relaxed mb-6">
+                        Users spent significant time simply discovering features — and once a feature was configured, nothing indicated it had been done.
+                      </p>
+                      <ImagePlaceholder
+                        name="design-phase2-before.png"
+                        className="w-full h-[520px]"
+                      />
+                    </div>
+
+                    {/* After */}
+                    <div className="mb-12">
+                      <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">
+                        After
+                      </p>
+                      <p className="text-text-secondary text-base leading-relaxed mb-6">
+                        New categories and sub-categories, each paired with an icon for faster recognition.
+                      </p>
+                      <ImagePlaceholder
+                        name="design-phase2-after.png"
+                        className="w-full h-[520px]"
+                      />
+                      <p className="text-text-secondary text-sm leading-relaxed mt-4">
+                        Reclaiming the dead white space on the right and giving categories room to breathe let us enrich feature discoverability and eliminate endless scrolling — reducing manual effort while raising the overall efficacy of the profile creation tool.
+                      </p>
+                    </div>
+
+                    {/* Visual indicators — text left, image right */}
+                    <div className="grid md:grid-cols-2 gap-6 items-start">
+                      <div>
+                        <h4 className="text-lg font-bold text-primary-dark mb-3 leading-snug">
+                          Visual indicators for configured and non-configured features
+                        </h4>
+                        <p className="text-text-secondary text-base leading-relaxed">
+                          Blue icons and labels let users tell at a glance which features they had already configured and which were still untouched — closing one of the most persistent gaps surfaced in research.
+                        </p>
+                      </div>
+                      <ImagePlaceholder
+                        name="design-phase2-visual-indicators.png"
+                        className="w-full h-[360px]"
+                      />
                     </div>
                   </div>
                 </div>
