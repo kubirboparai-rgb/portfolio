@@ -478,21 +478,52 @@ export default function KnoxConfigureCaseStudy() {
                   <h3 className="text-xl font-bold text-primary-dark mb-4">
                     Streamlining Enrollment Flows
                   </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
+                  <p className="text-text-secondary text-lg leading-relaxed mb-8">
                     I proactively identified friction in the{" "}
                     <strong className="text-primary-dark">
                       signup user journey for Knox Mobile enrollment
                     </strong>{" "}
                     for basic and premium users, and proposed redesigning it —
-                    helping prioritize it on the product roadmap. The existing
-                    flow was too long and asked too many questions, so we mapped
-                    out a streamlined path that reduced unnecessary steps.
+                    helping prioritize it on the product roadmap. We took the
+                    profile creation process from a{" "}
+                    <strong className="text-primary-dark">
+                      cumbersome 17-step procedure down to 5 simple steps
+                    </strong>
+                    , eliminating redundant questions and reducing unnecessary
+                    friction throughout the flow.
                   </p>
+
+                  {/* Result callout */}
+                  <div className="bg-blue-50/60 rounded-2xl p-7 mb-8 border border-blue-100">
+                    <p className="text-[11px] font-bold uppercase tracking-widest text-blue-500 mb-3">
+                      Result
+                    </p>
+                    <p className="text-2xl md:text-3xl font-bold text-primary-dark leading-snug mb-4">
+                      Culminated in a{" "}
+                      <span className="text-blue-600">
+                        58% increase in user satisfaction
+                      </span>{" "}
+                      score from 60 to 95, while also decreasing task completion
+                      time by 30%.
+                    </p>
+                    <p className="text-text-secondary text-base leading-relaxed">
+                      Feedback from users paints a vivid picture of the impact:
+                      many laud the revamped UI for a smoother user journey,
+                      while others highlighted in user interviews how they would
+                      like to see these features in other Knox Cloud Services. A
+                      recurring sentiment was the newly found ability to visually
+                      differentiate between features already configured vs
+                      non-configured — minimizing information overload, enabling
+                      real-time device preview, and delivering a frictionless
+                      experience.
+                    </p>
+                  </div>
+
                   <div className="rounded-xl overflow-hidden border border-border">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/portfolio/images/Knox%20Configure%20Images/User%20Flow%20%20Before%20and%20After.webp"
-                      alt="User flow before and after"
+                      alt="User flow before and after — 17 steps reduced to 5"
                       className="w-full h-auto"
                     />
                   </div>
