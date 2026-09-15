@@ -579,21 +579,28 @@ export default function KnoxConfigureCaseStudy() {
                 </h2>
 
                 <div className="bg-card rounded-2xl p-8 border border-border mb-8">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
+                  <h3 className="text-xl font-bold text-primary-dark mb-2">
                     Redesigning the Knox Configure Module
                   </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
+                  <p className="text-text-secondary text-lg leading-relaxed mb-8">
                     We rebuilt the{" "}
                     <strong className="text-primary-dark">
                       Knox Configure module (within settings)
                     </strong>{" "}
-                    to give users direct access to features, settings, and
-                    customization options — replacing the outdated process where
-                    they had to rely on customer service for assistance. Multiple
-                    iterations were explored through wireframes and prototypes.
+                    through multiple rounds of iteration — each shaped by feedback
+                    from PMs, the design team, and senior stakeholders — working
+                    toward a solution that gave users direct access to features
+                    without relying on customer service.
                   </p>
-                  <div className="flex flex-col gap-5">
-                    <div className="rounded-xl overflow-hidden border border-border">
+
+                  {/* Iteration 1 */}
+                  <div className="mb-6 rounded-2xl border border-border overflow-hidden">
+                    <div className="bg-blue-600 px-6 py-3 flex items-center gap-3">
+                      <span className="text-white text-xs font-bold uppercase tracking-widest">
+                        Iteration 01
+                      </span>
+                    </div>
+                    <div className="border-b border-border">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src="/portfolio/images/Knox%20Configure%20Images/Iterations%201.png"
@@ -601,7 +608,47 @@ export default function KnoxConfigureCaseStudy() {
                         className="w-full h-auto"
                       />
                     </div>
-                    <div className="rounded-xl overflow-hidden border border-border">
+                    <div className="p-6 bg-card">
+                      <h4 className="font-bold text-primary-dark mb-3">
+                        Establishing the Foundation
+                      </h4>
+                      <p className="text-text-secondary text-sm leading-relaxed mb-4">
+                        The first iteration focused on restructuring the core
+                        navigation and surfacing key actions that were previously
+                        buried. We moved away from the dependency on customer
+                        service by exposing configuration options directly in the
+                        module.
+                      </p>
+                      <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-amber-600 mb-2">
+                          Feedback received
+                        </p>
+                        <ul className="text-text-secondary text-sm leading-relaxed space-y-1.5">
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">PM:</strong> Prioritize the enrollment entry point — it was too hard to find for new users.</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">Design team:</strong> Information density was too high on first load; simplify the hierarchy before adding features.</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">Stakeholders:</strong> Needed clearer visual differentiation between configured vs. non-configured states to reduce support tickets.</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Iteration 2 */}
+                  <div className="mb-6 rounded-2xl border border-border overflow-hidden">
+                    <div className="bg-blue-700 px-6 py-3 flex items-center gap-3">
+                      <span className="text-white text-xs font-bold uppercase tracking-widest">
+                        Iteration 02
+                      </span>
+                    </div>
+                    <div className="border-b border-border">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src="/portfolio/images/Knox%20Configure%20Images/Iterations%202.png"
@@ -609,13 +656,84 @@ export default function KnoxConfigureCaseStudy() {
                         className="w-full h-auto"
                       />
                     </div>
-                    <div className="rounded-xl overflow-hidden border border-border">
+                    <div className="p-6 bg-card">
+                      <h4 className="font-bold text-primary-dark mb-3">
+                        Addressing Hierarchy & State Clarity
+                      </h4>
+                      <p className="text-text-secondary text-sm leading-relaxed mb-4">
+                        Taking the first round of feedback, we restructured the
+                        information hierarchy, made enrollment more prominent, and
+                        introduced visual indicators for configured vs.
+                        non-configured states. The layout was simplified to reduce
+                        cognitive load on first load.
+                      </p>
+                      <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-amber-600 mb-2">
+                          Feedback received
+                        </p>
+                        <ul className="text-text-secondary text-sm leading-relaxed space-y-1.5">
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">PM:</strong> Progress felt clearer but the profile creation flow still had too many steps — push for further simplification.</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">Design team:</strong> Typography and spacing needed alignment with Samsung One UI standards across all states.</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-amber-500 shrink-0">→</span>
+                            <span><strong className="text-primary-dark">Stakeholders:</strong> The real-time device preview concept resonated strongly — make it a focal feature of the final design.</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Iteration 3 */}
+                  <div className="rounded-2xl border border-border overflow-hidden">
+                    <div className="bg-blue-900 px-6 py-3 flex items-center gap-3">
+                      <span className="text-white text-xs font-bold uppercase tracking-widest">
+                        Iteration 03
+                      </span>
+                    </div>
+                    <div className="border-b border-border">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src="/portfolio/images/Knox%20Configure%20Images/Iterations%203.png"
                         alt="Iteration 3"
                         className="w-full h-auto"
                       />
+                    </div>
+                    <div className="p-6 bg-card">
+                      <h4 className="font-bold text-primary-dark mb-3">
+                        Converging on the Final Direction
+                      </h4>
+                      <p className="text-text-secondary text-sm leading-relaxed mb-4">
+                        The third iteration brought together all feedback loops —
+                        One UI alignment, a real-time device preview, a
+                        streamlined 5-step profile creation, and clear configured
+                        vs. non-configured states. This version served as the
+                        validated foundation that shipped to production.
+                      </p>
+                      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-green-600 mb-2">
+                          Outcome
+                        </p>
+                        <ul className="text-text-secondary text-sm leading-relaxed space-y-1.5">
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-green-500 shrink-0">✓</span>
+                            <span><strong className="text-primary-dark">PM & Stakeholders</strong> aligned on shipping — the flow met the goal of one-click, effortless enrollment.</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-green-500 shrink-0">✓</span>
+                            <span><strong className="text-primary-dark">Design team</strong> signed off on One UI consistency and the new component patterns established for future Knox modules.</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-green-500 shrink-0">✓</span>
+                            <span>Further iterations continued post-launch based on live user data, driving the satisfaction score from 60 → 95.</span>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
