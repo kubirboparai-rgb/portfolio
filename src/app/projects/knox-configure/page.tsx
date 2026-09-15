@@ -1028,7 +1028,7 @@ export default function KnoxConfigureCaseStudy() {
                 </div>
 
                 {/* Phase 4 — Real-time preview */}
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                <div className="bg-card rounded-2xl p-8 border border-border">
                   <p className="text-sm font-bold text-blue-600 mb-2">
                     Strategic phase 4 of 4
                   </p>
@@ -1061,79 +1061,6 @@ export default function KnoxConfigureCaseStudy() {
                   </div>
                 </div>
 
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
-                    The Redesigned Knox Configure Portal
-                  </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    The final design gives users{" "}
-                    <strong className="text-primary-dark">
-                      direct access to features, settings, and customization
-                      options
-                    </strong>{" "}
-                    — all aligned with Samsung One UI design system standards for
-                    a consistent experience across the Knox product suite.
-                  </p>
-                  <ImagePlaceholder
-                    name="final-design-dashboard.png"
-                    className="w-full h-[380px]"
-                  />
-                </div>
-
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
-                    Profile Management & Configuration
-                  </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    The redesigned profile management addresses the recognition
-                    vs recall issue by providing contextual information alongside
-                    profile names, helping users quickly understand and navigate
-                    their configurations.
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-5">
-                    <ImagePlaceholder
-                      name="final-design-profile-management.png"
-                      className="h-[280px]"
-                    />
-                    <ImagePlaceholder
-                      name="final-design-profile-detail.png"
-                      className="h-[280px]"
-                    />
-                  </div>
-                </div>
-
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
-                    Streamlined Enrollment Experience
-                  </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    The new enrollment experience provides simplicity,
-                    transparency, and efficiency — maintaining user engagement
-                    and satisfaction throughout the process. Built-in help and
-                    contextual guidance address the documentation gaps identified
-                    in research.
-                  </p>
-                  <ImagePlaceholder
-                    name="final-design-enrollment.png"
-                    className="w-full h-[320px]"
-                  />
-                </div>
-
-                <div className="bg-card rounded-2xl p-8 border border-border">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
-                    Smart Accessories Customization
-                  </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    A key part of the B2C expansion — we designed a new way for
-                    users to customize their devices with smart accessories,
-                    creating a more intuitive and meaningful connection with
-                    their phones and the brand they love.
-                  </p>
-                  <ImagePlaceholder
-                    name="final-design-smart-accessories.png"
-                    className="w-full h-[300px]"
-                  />
-                </div>
               </motion.div>
             </section>
 
@@ -1149,37 +1076,32 @@ export default function KnoxConfigureCaseStudy() {
                   User Testing
                 </h2>
 
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                <div className="bg-card rounded-2xl p-8 border border-border">
                   <h3 className="text-xl font-bold text-primary-dark mb-4">
                     Validating with Real Users
                   </h3>
                   <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    We conducted usability testing sessions with both IT
-                    administrators and first-time B2C users to validate our
-                    redesigned flows. Testing confirmed that the streamlined
-                    enrollment and improved IA significantly reduced confusion
-                    and task completion time.
+                    We ran usability testing to collect direct feedback on the
+                    redesigned Knox Configure. Participants responded strongly to
+                    the{" "}
+                    <strong className="text-primary-dark">
+                      color-coded visual feedback distinguishing configured from
+                      non-configured features
+                    </strong>
+                    , the visible progress indication, and the simplicity of the
+                    five-step creation process.
                   </p>
-                  <ImagePlaceholder
-                    name="user-testing-sessions.png"
-                    className="w-full h-[280px]"
-                  />
-                </div>
-
-                <div className="bg-card rounded-2xl p-8 border border-border">
-                  <h3 className="text-xl font-bold text-primary-dark mb-4">
-                    Key Testing Insights
-                  </h3>
-                  <p className="text-text-secondary text-lg leading-relaxed mb-6">
-                    Testing validated that providing simplicity, transparency,
-                    and efficiency in the flow was critical for both user groups.
-                    Findings were incorporated into the final iteration before
-                    launch.
+                  <p className="text-text-secondary text-lg leading-relaxed">
+                    Testing also surfaced a gap worth fixing: several participants
+                    wanted a{" "}
+                    <strong className="text-primary-dark">
+                      scroll affordance signaling there were more policies below
+                      the fold
+                    </strong>
+                    . Without it, some assumed they had reached the end of the
+                    settings list — a reminder that reducing visual noise can
+                    unintentionally hide depth.
                   </p>
-                  <ImagePlaceholder
-                    name="user-testing-results.png"
-                    className="w-full h-[260px]"
-                  />
                 </div>
               </motion.div>
             </section>
