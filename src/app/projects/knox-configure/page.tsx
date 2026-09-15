@@ -197,16 +197,24 @@ export default function KnoxConfigureCaseStudy() {
                     Knox Configure enabled IT admins to create and manage device profiles through a cloud portal to customize and automate Samsung devices. Yet despite its capabilities, many admins found the experience deeply frustrating.{" "}
                     <strong className="text-primary-dark">Creating and managing profiles should be seamless</strong> — but fragmented navigation, an overloaded feature set, and a complete lack of guided progression left users without the direction they needed. What should have been an empowering tool felt like an obstacle.
                   </p>
-                  {/* Two-column image placeholders */}
+                  {/* Two-column images */}
                   <div className="grid md:grid-cols-2 gap-4 mb-4">
-                    <ImagePlaceholder
-                      name="problem-old-ui.png"
-                      className="h-[220px]"
-                    />
-                    <ImagePlaceholder
-                      name="problem-user-frustration.png"
-                      className="h-[220px]"
-                    />
+                    <div className="rounded-xl overflow-hidden border border-border h-[220px]">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/Problem%20image%201.webp"
+                        alt="Old Knox Configure UI"
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
+                    <div className="rounded-xl overflow-hidden border border-border h-[220px]">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/portfolio/images/Knox%20Configure%20Images/Problem%20Image%202.webp"
+                        alt="Frustrated user"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   {/* Captions */}
                   <div className="grid md:grid-cols-2 gap-4 mb-8">
