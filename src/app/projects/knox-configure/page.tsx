@@ -267,7 +267,7 @@ export default function KnoxConfigureCaseStudy() {
                 </div>
 
                 {/* Before & After */}
-                <div className="bg-card rounded-2xl p-8 border border-border mb-8">
+                <div className="bg-card rounded-2xl p-8 border border-border">
                   <h3 className="text-xl font-bold text-primary-dark mb-8">
                     Before &amp; After
                   </h3>
@@ -337,49 +337,6 @@ export default function KnoxConfigureCaseStudy() {
                   </div>
                 </div>
 
-                {/* Challenge / Goal */}
-                <div className="grid md:grid-cols-2 gap-5">
-                  <div className="bg-card rounded-2xl overflow-hidden border border-border">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src="/portfolio/images/Knox%20Configure%20Images/Problem%20image%201.webp"
-                      alt="The Challenge"
-                      className="w-full h-[200px] object-cover"
-                    />
-                    <div className="p-7">
-                      <h3 className="text-lg font-bold text-primary-dark mb-2">
-                        The Challenge
-                      </h3>
-                      <p className="text-text-secondary text-sm leading-relaxed">
-                        Research indicated that the current enrollment flow is too
-                        long, asks too many questions, or has excessive steps. The
-                        Knox Configure module relied on an outdated process where
-                        users had to depend on customer service for assistance
-                        rather than having direct access to features and settings.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="bg-card rounded-2xl overflow-hidden border border-border">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src="/portfolio/images/Knox%20Configure%20Images/Problem%20Image%202.webp"
-                      alt="The Goal"
-                      className="w-full h-[200px] object-cover"
-                    />
-                    <div className="p-7">
-                      <h3 className="text-lg font-bold text-primary-dark mb-2">
-                        The Goal
-                      </h3>
-                      <p className="text-text-secondary text-sm leading-relaxed">
-                        The large majority of enterprises would consider using Knox
-                        Configure for B2B2C purposes if the flow provides
-                        simplicity, transparency, and efficiency to maintain user
-                        engagement and satisfaction. We aimed to deliver a
-                        one-click, effortless experience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </motion.div>
             </section>
 
