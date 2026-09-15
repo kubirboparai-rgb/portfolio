@@ -94,13 +94,12 @@ export default function Hero() {
               <p className="text-text-secondary text-base flex items-start gap-2.5">
                 <span className="mt-0.5 shrink-0">💼</span>
                 <span>
-                  Worked with{" "}
-                  <strong className="text-primary-dark">large enterprises</strong>{" "}
-                  like{" "}
-                  <strong className="text-primary-dark">
-                    Samsung Research America
-                  </strong>{" "}
-                  and <strong className="text-primary-dark">Infor</strong>.
+                  Large enterprises{" "}
+                  <strong className="text-primary-dark">Samsung Research America</strong>{" "}
+                  &amp;{" "}
+                  <strong className="text-primary-dark">Infor</strong>
+                  {" "}— currently at high-growth cybersecurity startup{" "}
+                  <strong className="text-primary-dark">Illumio</strong>.
                 </span>
               </p>
               <p className="text-text-secondary text-base flex items-start gap-2.5">
